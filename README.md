@@ -1,4 +1,4 @@
-Forked from selemondev/prime-store 
+Forked from [selemondev/prime-store ](https://github.com/selemondev/prime-store.git)
 
 # Shopping Cart Project with Nuxt 3, PrimeVue, and Pinia
 
@@ -16,25 +16,25 @@ This is a sample shopping cart project built with Nuxt 3, PrimeVue, and Pinia. T
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/selemondev/prime-store.git
+   git clone https://github.com/joelfriesen/store-demo.git
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd prime-store
+   cd store-demo
    ```
 
 3. Install dependencies:
 
    ```bash
-   pnpm install
+   npm install
    ```
 
 4. Run the development server:
 
    ```bash
-   pnpm dev
+   npm run dev
    ```
 
 5. Open your browser and visit [http://localhost:3000](http://localhost:3000) to see the application.
