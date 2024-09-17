@@ -1,3 +1,5 @@
+Forked from selemondev/prime-store 
+
 # Shopping Cart Project with Nuxt 3, PrimeVue, and Pinia
 
 This is a sample shopping cart project built with Nuxt 3, PrimeVue, and Pinia. The project allows users to browse products, add them to the cart, and proceed through the checkout process.
