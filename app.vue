@@ -1,6 +1,6 @@
 <script setup lang="ts">
 useHead({
-  title: 'PrimeStore'
+  title: 'Joel Friesen Store Demo'
 })
 const productStore = useProductStore();
 productStore.fetchProducts()
