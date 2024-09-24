@@ -12,8 +12,8 @@ const props = defineProps<Product>()
                 <img :src="props.image" :alt="props.title" class="w-8 h-8 rounded-md" />
             </PrimeButton>
             <div>
-                <h2 class="font-bold font-Roboto">{{ props.title.slice(0, 6) }}</h2>
-                <h3 class="text-gray-600">{{ props.category.slice(0, 15) }}</h3>
+                <h2 class="font-bold font-Roboto">{{ props.title }}</h2>
+                <h3 class="text-gray-600">{{ props.category }}</h3>
             </div>
         </div>
         <div class="space-y-1">

@@ -14,20 +14,25 @@ const cartHasProducts = computed(() => {
 </script>
 
 <template>
-    <header class="sticky top-0 z-10">
-        <nav class="flex items-center justify-between w-full h-16 px-4 bg-white border-b border-gray-200">
-            <div class="flex items-center">
-                <Icon name="prime:prime" class="text-3xl text-green-500 md:text-4xl" />
-                <h1 class="text-base font-bold md:text-xl">PRIME<span class="text-green-500">STORE</span></h1>
-            </div>
+    <header class="sticky top-0 z-10 border bg-white border-gray-100 pb-6">
+        <div class="flex items-center justify-between py-4 text-black px-4 sm:px-6">
+            <!-- Store Title -->
+            <h1 class="text-xl font-bold md:text-2xl flex items-center justify-between w-full md:w-auto flex-grow">Joel Friesen Store Demo</h1>
+
+            <!-- Navigation -->
+            <nav class="space-x-6 text-base md:text-lg px-4">
+            <a href="#" class="hover:text-yellow-400 transition-colors duration-300">Home</a>
+            <a href="#" class="hover:text-yellow-400 transition-colors duration-300">Shop</a>
+            <a href="#" class="hover:text-yellow-400 transition-colors duration-300">About</a>
+            <a href="#" class="hover:text-yellow-400 transition-colors duration-300">FAQ</a>
+            </nav>
 
             <div>
                 <div>
                     <button type="button" @click="handleOpenSidebar"
                         class="relative px-3 py-2 transition-all duration-200 ease-in border border-gray-200 rounded-md hover:bg-gray-100">
                         <Icon name="ph:shopping-cart-simple" class="text-xl" />
-                        <div
-                            class="absolute inline-flex items-center justify-center w-6 h-6 text-xs font-bold text-white bg-green-500 border-2 border-white rounded-md -top-2 -end-2">
+                        <div class="absolute inline-flex items-center justify-center w-6 h-6 text-xs font-bold text-white bg-green-500 border-2 border-white rounded-md -top-2 -end-2">
                             {{ cartStore.totalCartProducts }}
                         </div>
                     </button>
@@ -54,6 +59,6 @@ const cartHasProducts = computed(() => {
                     </div>
                 </div>
             </div>
-        </nav>
+        </div>
     </header>
 </template>
