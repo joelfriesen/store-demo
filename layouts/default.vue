@@ -4,5 +4,5 @@
 
 <template>
         <HeaderNavbar />
-        <slot/>
+        <slot />
 </template>

@@ -14,9 +14,10 @@ const cartHasProducts = computed(() => {
 </script>
 
 <template>
-    <header class="sticky top-0 z-10 border bg-white border-gray-100 pb-6">
+    <header class="sticky top-0 z-10 border bg-white border-gray-100">
         <div class="flex items-center justify-between py-4 text-black px-4 sm:px-6">
             <!-- Store Title -->
+            <Icon name="unjs:untun" class="text-4xl mx-4" />
             <h1 class="text-xl font-bold md:text-2xl flex items-center justify-between w-full md:w-auto flex-grow">Joel Friesen Store Demo</h1>
 
             <!-- Navigation -->
