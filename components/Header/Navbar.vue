@@ -22,10 +22,9 @@ const cartHasProducts = computed(() => {
 
             <!-- Navigation -->
             <nav class="space-x-6 text-base md:text-lg px-4">
-            <a href="#" class="hover:text-yellow-400 transition-colors duration-300">Home</a>
-            <a href="#" class="hover:text-yellow-400 transition-colors duration-300">Shop</a>
-            <a href="#" class="hover:text-yellow-400 transition-colors duration-300">About</a>
-            <a href="#" class="hover:text-yellow-400 transition-colors duration-300">FAQ</a>
+            <a href="/" class="hover:text-yellow-400 transition-colors duration-300">Home</a>
+            <a href="/shop" class="hover:text-yellow-400 transition-colors duration-300">Shop</a>
+            <a href="/about" class="hover:text-yellow-400 transition-colors duration-300">About</a>
             </nav>
 
             <div>
