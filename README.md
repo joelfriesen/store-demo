@@ -1,4 +1,7 @@
-Forked from [selemondev/prime-store ](https://github.com/selemondev/prime-store.git)
+Forked from [selemondev/prime-store](https://github.com/selemondev/prime-store.git)
+# DEMO
+
+View the demo [on Vercel](https://store-demo-wheat.vercel.app/)
 
 # Shopping Cart Project with Nuxt 3, PrimeVue, and Pinia
 
