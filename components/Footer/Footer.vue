@@ -4,7 +4,7 @@
             <!-- Store Title -->
            
             <!-- Navigation -->
-            <nav class="space-x-6 text-base text-sm">
+            <nav class="space-x-6 text-sm">
             <a href="/" class="hover:text-yellow-400 transition-colors duration-300">Home</a>
             <a href="/shop" class="hover:text-yellow-400 transition-colors duration-300">Shop</a>
             <a href="/about" class="hover:text-yellow-400 transition-colors duration-300">About Us</a>
