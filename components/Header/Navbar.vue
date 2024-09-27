@@ -15,20 +15,18 @@ const cartHasProducts = computed(() => {
 
 <template>
     <header class="sticky top-0 z-10 border bg-white border-gray-100">
-        <div class="flex items-center justify-between py-4 text-black px-4 sm:px-6">
+        <div class="flex flex-col sm:flex-row items-center justify-between py-4 text-black px-4 sm:px-6">
             <!-- Store Title -->
             <Icon name="unjs:untun" class="text-4xl mx-4" />
-            <h1 class="text-xl font-bold md:text-2xl flex items-center justify-between w-full md:w-auto flex-grow">Joel Friesen Store Demo</h1>
-
-            <!-- Navigation -->
-            <nav class="space-x-6 text-base md:text-lg px-4">
-            <a href="/" class="hover:text-yellow-400 transition-colors duration-300">Home</a>
-            <a href="/shop" class="hover:text-yellow-400 transition-colors duration-300">Shop</a>
-            <a href="/about" class="hover:text-yellow-400 transition-colors duration-300">About Us</a>
-            <a href="/contact" class="hover:text-yellow-400 transition-colors duration-300">Contact Us</a>
-            </nav>
-
-            <div>
+            <h1 class="text-xl font-bold md:text-2xl flex items-center justify-between md:w-auto flex-grow" >Joel Friesen Store Demo</h1>
+            <div class=" flex items-center justify-between ">
+                <!-- Navigation -->
+                <nav class="space-x-6 text-base md:text-lg px-4">
+                    <a href="/" class="hover:text-yellow-400 transition-colors duration-300">Home</a>
+                    <a href="/shop" class="hover:text-yellow-400 transition-colors duration-300">Shop</a>
+                    <a href="/about" class="hover:text-yellow-400 transition-colors duration-300">About Us</a>
+                    <a href="/contact" class="hover:text-yellow-400 transition-colors duration-300">Contact Us</a>
+                </nav>
                 <div>
                     <button type="button" @click="handleOpenSidebar"
                         class="relative px-3 py-2 transition-all duration-200 ease-in border border-gray-200 rounded-md hover:bg-gray-100">
@@ -38,20 +36,24 @@ const cartHasProducts = computed(() => {
                         </div>
                     </button>
                 </div>
-
                 <div>
                     <div class="flex card justify-content-center">
-                        <PrimeSidebar v-model:visible="isSidebarOpen" header="My Cart" position="right">
+                        <PrimeSidebar v-model:visible="isSidebarOpen" header="My Cart" position="right" class="w-full sm:w-96">
                             <div v-if="!cartHasProducts" class="grid w-full min-h-screen place-items-center">
                                 No products available in the cart
                             </div>
                             <div v-else class="flex flex-col justify-between h-full">
                                 <div class="overflow-y-scroll h-[650px]">
                                     <div v-for="cartProduct in cartStore.cart" :key="cartProduct.id">
-                                        <CartProductCard :id="cartProduct.id" :title="cartProduct.title"
-                                            :description="cartProduct.description" :price="cartProduct.price"
-                                            :category="cartProduct.category" :image="cartProduct.image"
-                                            :rating="cartProduct.rating" />
+                                        <CartProductCard 
+                                            :id="cartProduct.id" 
+                                            :title="cartProduct.title"
+                                            :description="cartProduct.description" 
+                                            :price="cartProduct.price"
+                                            :category="cartProduct.category" 
+                                            :image="cartProduct.image"
+                                            :rating="cartProduct.rating" 
+                                        />
                                     </div>
                                 </div>
                                 <CartProductPaymentDetails @close="handleCloseSidebar"/>
@@ -63,3 +65,8 @@ const cartHasProducts = computed(() => {
         </div>
     </header>
 </template>
+
+
+<style scoped>
+/* Custom styles for this page */
+</style>
