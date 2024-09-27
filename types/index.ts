@@ -10,6 +10,7 @@ export interface Product {
 }
 
 export enum Category {
+    Books = "books",
     Electronics = "electronics",
     Jewelery = "jewelery",
     MenSClothing = "men's clothing",
