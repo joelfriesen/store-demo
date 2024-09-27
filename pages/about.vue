@@ -5,14 +5,14 @@
       <section class="mb-8">
         <h2 class="text-2xl font-semibold mb-4">Our Mission</h2>
         <p class="text-lg leading-relaxed">
-          At Joel Friesen Store Demo, our mission is to provide high-quality products that cater to all your needs. We are passionate about delivering excellent customer service and ensuring a seamless shopping experience.
+          At Joel Friesen Store Demo, our mission is to provide a high-quality demonstration that shows what an online store, made in nuxt, looks like. We are passionate about delivering this demonstration and ensuring a seamless previewing experience.
         </p>
       </section>
   
       <section class="mb-8">
         <h2 class="text-2xl font-semibold mb-4">Our Story</h2>
         <p class="text-lg leading-relaxed">
-          Established in 2024, our store began with a vision to make premium products accessible to everyone. We started as a small online shop and have grown into a trusted brand, offering a wide range of items, from electronics to books and more.
+          Established in 2024, our store began with a vision to demonstrate premium products accessible to everyone. We started as a small online shop demonstration and have grown into a slightly larger demonstration, offering a wide range of items to look at, and pages to view.
         </p>
       </section>
   
@@ -20,8 +20,8 @@
         <h2 class="text-2xl font-semibold mb-4">Meet the Team</h2>
         <ul class="list-disc pl-6">
           <li class="text-lg mb-2">Joel Friesen - Founder & CEO</li>
-          <li class="text-lg mb-2">Jane Doe - Head of Marketing</li>
-          <li class="text-lg mb-2">John Smith - Lead Developer</li>
+          <li class="text-lg mb-2">Jane Doe - Lead Demo Employee</li>
+          <li class="text-lg mb-2">John Smith - Demo Employee</li>
         </ul>
       </section>
   
