@@ -1,9 +1,9 @@
 <template>
     <div class="container mx-auto py-10 px-4">
       <!-- Hero Section -->
-      <section class="text-center py-20 bg-blue-500 text-white rounded-lg mb-10">
-        <h1 class="text-5xl font-bold mb-4">Welcome to Joel Friesen Store Demo</h1>
-        <p class="text-lg mb-6">Discover the best products, carefully curated just for you.</p>
+      <section class="text-center py-20 bg-hero-background bg-cover text-white rounded-lg mb-10">
+        <h1 class="text-5xl font-bold mb-4 [text-shadow:_2px_1px_2px_rgb(0_0_0_/_40%)]">Welcome to Joel Friesen Store Demo</h1>
+        <p class="text-lg mb-6 [text-shadow:_2px_1px_2px_rgb(0_0_0_/_40%)]">Discover the best products, carefully curated just for you.</p>
         <NuxtLink to="/shop" class="bg-white text-blue-500 font-semibold py-2 px-6 rounded-lg hover:bg-blue-100 transition">Shop Now</NuxtLink>
       </section>
   
