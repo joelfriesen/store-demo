@@ -27,23 +27,25 @@
       </section>
   
       <!-- Loading state -->
-      <section v-else class="text-center py-20">
-        <p class="text-lg font-semibold text-gray-600">Loading featured products...</p>
+      <section v-else class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div v-for="n of 16" :key="n">
+          <ProductCardSkeleton />
+        </div>
       </section>
   
       <!-- Testimonials Section -->
       <section class="text-center">
         <h2 class="text-4xl font-bold mb-6">What Our Customers Say</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div class="bg-gray-100 p-6 rounded-lg shadow">
+          <div class="bg-indigo-200 p-6 rounded-lg shadow">
             <p class="text-lg italic">"Amazing products and great customer service!"</p>
             <p class="mt-4 font-semibold">- Customer 1</p>
           </div>
-          <div class="bg-gray-100 p-6 rounded-lg shadow">
+          <div class="bg-indigo-200 p-6 rounded-lg shadow">
             <p class="text-lg italic">"I love the variety of items. Always find what I need!"</p>
             <p class="mt-4 font-semibold">- Customer 2</p>
           </div>
-          <div class="bg-gray-100 p-6 rounded-lg shadow">
+          <div class="bg-indigo-200 p-6 rounded-lg shadow">
             <p class="text-lg italic">"Fast delivery and the quality is top-notch!"</p>
             <p class="mt-4 font-semibold">- Customer 3</p>
           </div>

@@ -37,5 +37,5 @@ export default defineNuxtConfig({
     }
   },
   css: ["primevue/resources/themes/lara-light-green/theme.css"],
-  devtools: { enabled: true }
+  devtools: { enabled: false }
 })
