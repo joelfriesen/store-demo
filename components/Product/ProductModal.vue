@@ -57,7 +57,6 @@ const handleEscapeKey = (event: KeyboardEvent) => {
 };
 
 // Register event listeners when the modal is shown
-// Register event listeners when the modal is shown
 watch(() => props.showModal, (newVal) => {
   if (newVal) {
     document.addEventListener('mousedown', handleClickOutside);
@@ -75,6 +74,7 @@ watch(() => props.showModal, (newVal) => {
 onBeforeUnmount(() => {
   document.removeEventListener("mousedown", handleClickOutside);
   document.removeEventListener("keydown", handleEscapeKey);
+  window.removeEventListener('popstate', handlePopState);
 });
 </script>
 
