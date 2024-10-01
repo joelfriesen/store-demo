@@ -33,33 +33,38 @@ const closeModal = () => {
   <PrimeCard>
     <!-- Product Image -->
     <template #header>
-      <div class="grid place-items-center">
-        <img :src="props.image" class="h-64 p-4" />
-      </div>
+        <a href="javascript:void(0)" @click="openModal(props.id)">    
+        <div class="grid place-items-center">
+            <img :src="props.image" class="h-64 p-4" />
+        </div>
+    </a>
     </template>
 
     <!-- Product Title and Price -->
     <template #subtitle>
-      <div class="flex justify-between items-start">
-        <div class="space-y-1">
-          <h2 class="font-semibold text-gray-800">{{ props.title }}</h2>
-        </div>
-        <div>
-          <h2 class="text-lg font-bold text-indigo-700 font-Roboto">${{ props.price }}</h2>
-        </div>
-      </div>
-      <p>{{ props.description }}</p>
+        <a href="javascript:void(0)" @click="openModal(props.id)">
+            <div class="flex justify-between items-start">
+                <div class="space-y-1">
+                <h2 class="font-semibold text-gray-800">{{ props.title }}</h2>
+                </div>
+                <div>
+                <h2 class="text-lg font-bold text-indigo-700 font-Roboto">${{ props.price }}</h2>
+                </div>
+            </div>
+            <p>{{ props.description }}</p>
+        </a>
     </template>
 
     <!-- Modal Trigger and Add to Cart Button -->
     <template #content>
-      <!-- Button to Open Modal -->
-      <button
+      <!-- Button to Open Modal --- TOO CLUTTERED -->
+      <!-- <PrimeButton
         @click="openModal(props.id)"
-        class="bg-blue-500 text-white py-2 px-4 rounded-lg mt-4 hover:bg-blue-600"
-      >
-        View Details
-      </button>
+        outlined
+        icon="pi pi-shopping-cart"
+        label="View Details"
+        class="w-full"
+      /> -->
 
       <!-- Add to Cart Button -->
       <PrimeButton
