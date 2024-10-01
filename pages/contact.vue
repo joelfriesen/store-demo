@@ -2,7 +2,7 @@
   <div class="container mx-auto py-10 px-4">
     <h1 class="text-4xl font-bold mb-6 text-center">Contact Us</h1>
     <p class="text-lg text-center mb-10">We'd love to hear from you! Please fill out the form below.</p>
-
+    <p class=" text-xl text-center mb-10 text-pink-900">Just for demonstration, this form will not be sent! email <a href="mailto:joel@joelf.com">joel@joelf.com</a> if you have questions</p>
     <!-- Contact Form -->
     <form @submit.prevent="submitForm" class="max-w-lg mx-auto bg-white shadow-md rounded-lg p-8">
       <!-- Name Input -->
@@ -81,7 +81,7 @@ const form = reactive({
 // Mock submit function (can be replaced with actual submission logic)
 const submitForm = () => {
   console.log('Form submitted:', form)
-  alert(`Thank you, ${form.name}! Your message has been sent.`)
+  alert(`Thank you, ${form.name}!  This message was not sent,a s this is a domonstration and not hooked to anything.`)
   // Reset the form fields after submission
   form.name = ''
   form.email = ''
