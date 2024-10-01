@@ -1,3 +1,19 @@
 {
-  "extends": "../.nuxt/tsconfig.server.json"
+  "extends": "../.nuxt/tsconfig.server.json",
+  "compilerOptions": {
+    "strict": true,
+    "module": "ESNext",
+    "target": "ESNext",
+    "lib": ["DOM", "ESNext"],
+    "moduleResolution": "Node",
+    "skipLibCheck": true,
+    "noEmit": true,
+    "types": ["@types/node"]
+  },
+  "exclude": [
+    "node_modules",
+    ".nuxt",
+    "dist",
+    "tailwind.config.js"  // Make sure tailwind.config.js is excluded
+  ]
 }
