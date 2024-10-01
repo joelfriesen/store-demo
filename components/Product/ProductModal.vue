@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import { ref, watch, onBeforeUnmount } from 'vue';
 import { useProductStore } from '~/stores/productStore';
-import type { Product } from '~/types'; // Assuming you have a Product type
+import { useCartStore } from '~/stores/cartStore';
+import type { Product } from '~/types'; 
 
 // Props received from the parent component with proper typing
 const props = defineProps<{
@@ -10,6 +11,11 @@ const props = defineProps<{
   closeModal?: () => void; // Optional function that takes no parameters
 }>();
 
+// Function to add an entry to the browser's history
+const addHistoryEntry = () => {
+  window.history.pushState(null, '', window.location.href); // Push the current URL into the history stack
+};
+
 // Reactive variable to hold the product details
 const product = ref<Product | undefined>(undefined);
 
@@ -17,7 +23,11 @@ const product = ref<Product | undefined>(undefined);
 const modalRef = ref<HTMLElement | null>(null);
 
 // Access the product store
+const cartStore = useCartStore(); 
 const productStore = useProductStore();
+const handleAddProductToCart = (product: Product) => {
+  cartStore.addProductToCart(product);
+};
 
 // Watch for changes in the `productId` prop and fetch the product
 watch(() => props.productId, () => {
@@ -25,6 +35,12 @@ watch(() => props.productId, () => {
     product.value = productStore.products.find(p => p.id === parseInt(props.productId!));
   }
 });
+
+// Function to handle the browser's back button (popstate event)
+const handlePopState = () => {
+  props.closeModal?.(); // Safely close the modal if it's open
+};
+
 
 // Handle clicking outside the modal content
 const handleClickOutside = (event: MouseEvent) => {
@@ -41,13 +57,17 @@ const handleEscapeKey = (event: KeyboardEvent) => {
 };
 
 // Register event listeners when the modal is shown
+// Register event listeners when the modal is shown
 watch(() => props.showModal, (newVal) => {
   if (newVal) {
-    document.addEventListener("mousedown", handleClickOutside);
-    document.addEventListener("keydown", handleEscapeKey);
+    document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener('keydown', handleEscapeKey);
+    window.addEventListener('popstate', handlePopState); // Listen for the back button (popstate event)
+    addHistoryEntry(); // Add a history entry when the modal is opened
   } else {
-    document.removeEventListener("mousedown", handleClickOutside);
-    document.removeEventListener("keydown", handleEscapeKey);
+    document.removeEventListener('mousedown', handleClickOutside);
+    document.removeEventListener('keydown', handleEscapeKey);
+    window.removeEventListener('popstate', handlePopState); // Clean up the popstate listener
   }
 });
 
@@ -61,7 +81,7 @@ onBeforeUnmount(() => {
 <template>
   <div v-if="showModal" class="fixed inset-0 z-20 flex items-center justify-center bg-black bg-opacity-50">
     <!-- Modal content wrapper -->
-    <div ref="modalRef" class="bg-white rounded-lg shadow-lg p-6 w-1/2 relative">
+    <div ref="modalRef" class="bg-white  shadow-lg p-6 relative w-full min-h-screen rounded-none md:rounded-lg md:min-h-fit md:w-1/2 ">
       <!-- Close Button -->
       <button @click="closeModal" class="absolute top-2 right-2 text-gray-500 hover:text-black">
         &#x2715;
@@ -87,6 +107,14 @@ onBeforeUnmount(() => {
             Rating: {{ product.rating.rate }} ★ ({{ product.rating.count }} reviews)
           </p>
         </div>
+
+        <PrimeButton
+        @click="handleAddProductToCart(product)"
+        outlined
+        icon="pi pi-shopping-cart"
+        label="Add to cart"
+        class="w-full"
+        />
       </div>
 
       <!-- Loading State -->
