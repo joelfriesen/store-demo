@@ -102,7 +102,7 @@ onBeforeUnmount(() => {
         </div>
 
         <!-- Rating -->
-        <div v-if="product.rating" class="mt-4">
+        <div v-if="product.rating" class="my-4">
           <p class="text-yellow-500 font-semibold">
             Rating: {{ product.rating.rate }} ★ ({{ product.rating.count }} reviews)
           </p>
