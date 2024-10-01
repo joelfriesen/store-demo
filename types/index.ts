@@ -10,11 +10,14 @@ export interface Product {
 }
 
 export enum Category {
-    Books = "books",
-    Electronics = "electronics",
-    Jewelery = "jewelery",
-    MenSClothing = "men's clothing",
-    WomenSClothing = "women's clothing",
+    Books = "Books",
+    ClassicBooks = "Classic Books",
+    EssentialBooks = "Essential Books",
+    FantasyBooks = "Fantasy Books",
+    BronteBooks = "Brontë Books",
+    Electronics = "Electronics",
+    Jewelery = "Jewelery",
+    Clothing = "Clothing",
 }
 
 export interface Rating {

@@ -98,7 +98,7 @@ onBeforeUnmount(() => {
         <!-- Price and Category -->
         <div class="flex justify-between items-center">
           <span class="text-xl font-semibold text-indigo-600">${{ product.price }}</span>
-          <span class="text-gray-600">{{ product.category }}</span>
+          <span class="text-gray-600"><a href="/shop">All Products</a>&nbsp;&gt;&nbsp;<a :href="`/shop?cat=${product.category}`">{{ product.category }}</a></span>
         </div>
 
         <!-- Rating -->
