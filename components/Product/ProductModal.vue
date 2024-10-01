@@ -57,7 +57,6 @@ const handleEscapeKey = (event: KeyboardEvent) => {
 };
 
 // Register event listeners when the modal is shown
-// Register event listeners when the modal is shown
 watch(() => props.showModal, (newVal) => {
   if (newVal) {
     document.addEventListener('mousedown', handleClickOutside);
@@ -75,6 +74,7 @@ watch(() => props.showModal, (newVal) => {
 onBeforeUnmount(() => {
   document.removeEventListener("mousedown", handleClickOutside);
   document.removeEventListener("keydown", handleEscapeKey);
+  window.removeEventListener('popstate', handlePopState);
 });
 </script>
 
@@ -98,11 +98,11 @@ onBeforeUnmount(() => {
         <!-- Price and Category -->
         <div class="flex justify-between items-center">
           <span class="text-xl font-semibold text-indigo-600">${{ product.price }}</span>
-          <span class="text-gray-600">{{ product.category }}</span>
+          <span class="text-gray-600"><a href="/shop">All Products</a>&nbsp;&gt;&nbsp;<a :href="`/shop?cat=${product.category}`">{{ product.category }}</a></span>
         </div>
 
         <!-- Rating -->
-        <div v-if="product.rating" class="mt-4">
+        <div v-if="product.rating" class="my-4">
           <p class="text-yellow-500 font-semibold">
             Rating: {{ product.rating.rate }} ★ ({{ product.rating.count }} reviews)
           </p>

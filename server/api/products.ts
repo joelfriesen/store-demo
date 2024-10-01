@@ -11,7 +11,7 @@ export default defineEventHandler(() => {
       title: 'The Great Gatsby',
       price: 15.99,
       description: 'A classic novel by F. Scott Fitzgerald about the American dream.',
-      category: Category.Books,
+      category: Category.EssentialBooks,
       image: '/images/gatsby.jpg',
       rating: {
         rate: 4.7,
@@ -24,7 +24,7 @@ export default defineEventHandler(() => {
       title: 'To Kill a Mockingbird',
       price: 12.99,
       description: 'Harper Lee’s timeless tale of a young girl growing up in the South.',
-      category: Category.Books,
+      category: Category.EssentialBooks,
       image: '/images/mockingbird.jpg',
       rating: {
         rate: 4.8,
@@ -37,7 +37,7 @@ export default defineEventHandler(() => {
       title: '1984',
       price: 18.99,
       description: 'George Orwell’s dystopian masterpiece about a world under totalitarian rule.',
-      category: Category.Books,
+      category: Category.EssentialBooks,
       image: '/images/1984.jpg',
       rating: {
         rate: 4.6,
@@ -50,7 +50,7 @@ export default defineEventHandler(() => {
       title: 'Moby Dick',
       price: 14.99,
       description: 'Herman Melville’s epic tale of obsession and revenge at sea.',
-      category: Category.Books,
+      category: Category.EssentialBooks,
       image: '/images/mobydick.jpg',
       rating: {
         rate: 4.2,
@@ -63,7 +63,7 @@ export default defineEventHandler(() => {
       title: 'Pride and Prejudice',
       price: 11.99,
       description: 'Jane Austen’s romantic novel about manners and matrimonial machinations.',
-      category: Category.Books,
+      category: Category.EssentialBooks,
       image: '/images/prideprejudice.jpg',
       rating: {
         rate: 4.9,
@@ -76,7 +76,7 @@ export default defineEventHandler(() => {
       title: 'The Catcher in the Rye',
       price: 13.49,
       description: 'J.D. Salinger’s classic about teenage alienation and angst.',
-      category: Category.Books,
+      category: Category.EssentialBooks,
       image: '/images/catcher.jpg',
       rating: {
         rate: 4.1,
@@ -89,7 +89,7 @@ export default defineEventHandler(() => {
       title: 'The Hobbit',
       price: 16.99,
       description: 'J.R.R. Tolkien’s fantasy adventure that precedes The Lord of the Rings.',
-      category: Category.Books,
+      category: Category.FantasyBooks,
       image: '/images/hobbit.jpg',
       rating: {
         rate: 4.8,
@@ -102,7 +102,7 @@ export default defineEventHandler(() => {
       title: 'War and Peace',
       price: 22.99,
       description: 'Leo Tolstoy’s historical epic about Russia during the Napoleonic era.',
-      category: Category.Books,
+      category: Category.EssentialBooks,
       image: '/images/warpeace.jpg',
       rating: {
         rate: 4.3,
@@ -115,7 +115,7 @@ export default defineEventHandler(() => {
       title: 'Crime and Punishment',
       price: 19.49,
       description: 'Fyodor Dostoevsky’s psychological novel about guilt and redemption.',
-      category: Category.Books,
+      category: Category.EssentialBooks,
       image: '/images/crimepunishment.png',
       rating: {
         rate: 4.5,
@@ -128,7 +128,7 @@ export default defineEventHandler(() => {
       title: 'The Odyssey',
       price: 17.99,
       description: 'Homer’s ancient Greek epic about the adventures of Odysseus.',
-      category: Category.Books,
+      category: Category.ClassicBooks,
       image: '/images/odyssey.jpg',
       rating: {
         rate: 4.7,
@@ -141,7 +141,7 @@ export default defineEventHandler(() => {
       title: 'The Brothers Karamazov',
       price: 20.99,
       description: 'A profound exploration of faith, doubt, and family by Fyodor Dostoevsky.',
-      category: Category.Books,
+      category: Category.EssentialBooks,
       image: '/images/karamazov.jpg',
       rating: {
         rate: 4.6,
@@ -154,7 +154,7 @@ export default defineEventHandler(() => {
       title: 'Don Quixote',
       price: 21.99,
       description: 'Miguel de Cervantes’ satirical tale of a man who becomes a knight.',
-      category: Category.Books,
+      category: Category.EssentialBooks,
       image: '/images/quixote.jpg',
       rating: {
         rate: 4.4,
@@ -167,7 +167,7 @@ export default defineEventHandler(() => {
       title: 'The Divine Comedy',
       price: 24.99,
       description: 'Dante Alighieri’s epic poem exploring the afterlife and human destiny.',
-      category: Category.Books,
+      category: Category.ClassicBooks,
       image: '/images/divinecomedy.jpg',
       rating: {
         rate: 4.9,
@@ -180,7 +180,7 @@ export default defineEventHandler(() => {
       title: 'Frankenstein',
       price: 12.99,
       description: 'Mary Shelley’s groundbreaking novel of scientific ambition and horror.',
-      category: Category.Books,
+      category: Category.EssentialBooks,
       image: '/images/frankenstein.jpg',
       rating: {
         rate: 4.5,
@@ -193,7 +193,7 @@ export default defineEventHandler(() => {
       title: 'Brave New World',
       price: 16.49,
       description: 'Aldous Huxley’s vision of a future dystopia ruled by technology and control.',
-      category: Category.Books,
+      category: Category.EssentialBooks,
       image: '/images/bravenewworld.jpg',
       rating: {
         rate: 4.4,
@@ -206,7 +206,7 @@ export default defineEventHandler(() => {
       title: 'The Lord of the Rings: The Fellowship of the Ring',
       price: 19.99,
       description: 'The first book in J.R.R. Tolkien’s epic fantasy series.',
-      category: Category.Books,
+      category: Category.FantasyBooks,
       image: '/images/fellowship.gif',
       rating: {
         rate: 4.9,
@@ -219,7 +219,7 @@ export default defineEventHandler(() => {
       title: 'The Lord of the Rings: The Two Towers',
       price: 19.99,
       description: 'The second book in J.R.R. Tolkien’s epic fantasy series.',
-      category: Category.Books,
+      category: Category.FantasyBooks,
       image: '/images/twotowers.gif',
       rating: {
         rate: 4.9,
@@ -232,7 +232,7 @@ export default defineEventHandler(() => {
       title: 'The Lord of the Rings: The Return of the King',
       price: 19.99,
       description: 'The final book in J.R.R. Tolkien’s epic fantasy series.',
-      category: Category.Books,
+      category: Category.FantasyBooks,
       image: '/images/returnking.gif',
       rating: {
         rate: 4.9,
@@ -245,7 +245,7 @@ export default defineEventHandler(() => {
       title: 'The Iliad',
       price: 17.99,
       description: 'Homer’s ancient Greek epic about the Trojan War.',
-      category: Category.Books,
+      category: Category.ClassicBooks,
       image: '/images/iliad.jpg',
       rating: {
         rate: 4.6,
@@ -258,7 +258,7 @@ export default defineEventHandler(() => {
       title: 'The Picture of Dorian Gray',
       price: 13.49,
       description: 'Oscar Wilde’s philosophical novel about vanity and corruption.',
-      category: Category.Books,
+      category: Category.EssentialBooks,
       image: '/images/doriangray.jpg',
       rating: {
         rate: 4.5,
@@ -271,7 +271,7 @@ export default defineEventHandler(() => {
       title: 'Jane Eyre',
       price: 15.49,
       description: 'Charlotte Brontë’s novel about resilience and love in a young orphan’s life.',
-      category: Category.Books,
+      category: Category.BronteBooks,
       image: '/images/janeeyre.jpg',
       rating: {
         rate: 4.8,
@@ -284,7 +284,7 @@ export default defineEventHandler(() => {
       title: 'Wuthering Heights',
       price: 12.99,
       description: 'Emily Brontë’s intense and passionate tale of love and revenge.',
-      category: Category.Books,
+      category: Category.BronteBooks,
       image: '/images/wutheringheights.webp',
       rating: {
         rate: 4.4,
@@ -297,7 +297,7 @@ export default defineEventHandler(() => {
       title: 'Florg Backpack',
       price: 19.99,
       description: 'Store all the important things.',
-      category: Category.Electronics,  // Use the enum value here
+      category: Category.Clothing,  // Use the enum value here
       image: '/images/product1.jpg',
       rating: {
         rate: 4.5,
@@ -310,7 +310,7 @@ export default defineEventHandler(() => {
       title: 'Merch Shirt',
       price: 29.99,
       description: 'This is the official shirt of the UVic Bookstore',
-      category: Category.Jewelery,  // Use the enum value here
+      category: Category.Clothing,  // Use the enum value here
       image: '/images/product2.jpg',
       rating: {
         rate: 4.0,
