@@ -1,19 +1,20 @@
 <script setup lang="ts">
 import { ref, watch, onBeforeUnmount } from 'vue';
 import { useProductStore } from '~/stores/productStore';
+import type { Product } from '~/types'; // Assuming you have a Product type
 
-// Props received from the parent component
-const props = defineProps({
-  productId: String,
-  showModal: Boolean,
-  closeModal: Function,
-});
+// Props received from the parent component with proper typing
+const props = defineProps<{
+  productId: string;
+  showModal: boolean;
+  closeModal?: () => void; // Optional function that takes no parameters
+}>();
 
 // Reactive variable to hold the product details
-const product = ref(null);
+const product = ref<Product | undefined>(undefined);
 
 // Declare modalRef to track the modal DOM element
-const modalRef = ref(null); // This tracks the modal DOM element
+const modalRef = ref<HTMLElement | null>(null);
 
 // Access the product store
 const productStore = useProductStore();
@@ -21,21 +22,21 @@ const productStore = useProductStore();
 // Watch for changes in the `productId` prop and fetch the product
 watch(() => props.productId, () => {
   if (props.productId && productStore.products.length > 0) {
-    product.value = productStore.products.find(p => p.id === parseInt(props.productId));
+    product.value = productStore.products.find(p => p.id === parseInt(props.productId!));
   }
 });
 
 // Handle clicking outside the modal content
-const handleClickOutside = (event) => {
-  if (modalRef.value && !modalRef.value.contains(event.target)) {
-    props.closeModal();
+const handleClickOutside = (event: MouseEvent) => {
+  if (modalRef.value && !modalRef.value.contains(event.target as Node)) {
+    props.closeModal?.(); // Safely invoke closeModal if it is defined
   }
 };
 
 // Handle escape key press
-const handleEscapeKey = (event) => {
+const handleEscapeKey = (event: KeyboardEvent) => {
   if (event.key === "Escape") {
-    props.closeModal();
+    props.closeModal?.(); // Safely invoke closeModal if it is defined
   }
 };
 
@@ -95,4 +96,3 @@ onBeforeUnmount(() => {
     </div>
   </div>
 </template>
-
