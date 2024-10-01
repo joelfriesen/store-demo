@@ -77,7 +77,7 @@ const closeModal = () => {
 
       <!-- Modal Component -->
       <ProductModal
-        :productId="selectedProductId"
+        :productId="selectedProductId || ''"
         :showModal="showModal"
         :closeModal="closeModal"
       />
