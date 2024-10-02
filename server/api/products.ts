@@ -13,6 +13,12 @@ export default defineEventHandler(() => {
       description: 'A classic novel by F. Scott Fitzgerald about the American dream.',
       category: Category.EssentialBooks,
       image: '/images/gatsby.jpg',
+      images: [ // Additional product shots
+        '/images/gatsby.jpg',
+        '/images/inside.jpg',
+        '/images/back.jpg',
+        '/images/side.jpg'
+      ],
       rating: {
         rate: 4.7,
         count: 5300,
@@ -26,6 +32,12 @@ export default defineEventHandler(() => {
       description: 'Harper Lee’s timeless tale of a young girl growing up in the South.',
       category: Category.EssentialBooks,
       image: '/images/mockingbird.jpg',
+      images: [ // Additional product shots
+        '/images/mockingbird.jpg',
+        '/images/inside.jpg',
+        '/images/back.jpg',
+        '/images/side.jpg'
+      ],
       rating: {
         rate: 4.8,
         count: 8700,
@@ -39,6 +51,12 @@ export default defineEventHandler(() => {
       description: 'George Orwell’s dystopian masterpiece about a world under totalitarian rule.',
       category: Category.EssentialBooks,
       image: '/images/1984.jpg',
+      images: [ // Additional product shots
+        '/images/1984.jpg',
+        '/images/inside.jpg',
+        '/images/back.jpg',
+        '/images/side.jpg'
+      ],
       rating: {
         rate: 4.6,
         count: 9900,
@@ -52,6 +70,12 @@ export default defineEventHandler(() => {
       description: 'Herman Melville’s epic tale of obsession and revenge at sea.',
       category: Category.EssentialBooks,
       image: '/images/mobydick.jpg',
+      images: [ // Additional product shots
+        '/images/mobydick.jpg',
+        '/images/inside.jpg',
+        '/images/back.jpg',
+        '/images/side.jpg'
+      ],
       rating: {
         rate: 4.2,
         count: 4700,
@@ -65,6 +89,12 @@ export default defineEventHandler(() => {
       description: 'Jane Austen’s romantic novel about manners and matrimonial machinations.',
       category: Category.EssentialBooks,
       image: '/images/prideprejudice.jpg',
+      images: [ // Additional product shots
+        '/images/prideprejudice.jpg',
+        '/images/inside.jpg',
+        '/images/back.jpg',
+        '/images/side.jpg'
+      ],
       rating: {
         rate: 4.9,
         count: 10200,
@@ -78,6 +108,12 @@ export default defineEventHandler(() => {
       description: 'J.D. Salinger’s classic about teenage alienation and angst.',
       category: Category.EssentialBooks,
       image: '/images/catcher.jpg',
+      images: [ // Additional product shots
+        '/images/catcher.jpg',
+        '/images/inside.jpg',
+        '/images/back.jpg',
+        '/images/side.jpg'
+      ],
       rating: {
         rate: 4.1,
         count: 6200,
@@ -91,6 +127,12 @@ export default defineEventHandler(() => {
       description: 'J.R.R. Tolkien’s fantasy adventure that precedes The Lord of the Rings.',
       category: Category.FantasyBooks,
       image: '/images/hobbit.jpg',
+      images: [ // Additional product shots
+        '/images/hobbit.jpg',
+        '/images/inside.jpg',
+        '/images/back.jpg',
+        '/images/side.jpg'
+      ],
       rating: {
         rate: 4.8,
         count: 12800,
@@ -104,6 +146,12 @@ export default defineEventHandler(() => {
       description: 'Leo Tolstoy’s historical epic about Russia during the Napoleonic era.',
       category: Category.EssentialBooks,
       image: '/images/warpeace.jpg',
+      images: [ // Additional product shots
+        '/images/warpeace.jpg',
+        '/images/inside.jpg',
+        '/images/back.jpg',
+        '/images/side.jpg'
+      ],
       rating: {
         rate: 4.3,
         count: 3800,
@@ -117,6 +165,12 @@ export default defineEventHandler(() => {
       description: 'Fyodor Dostoevsky’s psychological novel about guilt and redemption.',
       category: Category.EssentialBooks,
       image: '/images/crimepunishment.png',
+      images: [ // Additional product shots
+        '/images/crimepunishment.png',
+        '/images/inside.jpg',
+        '/images/back.jpg',
+        '/images/side.jpg'
+      ],
       rating: {
         rate: 4.5,
         count: 5200,
@@ -130,6 +184,12 @@ export default defineEventHandler(() => {
       description: 'Homer’s ancient Greek epic about the adventures of Odysseus.',
       category: Category.ClassicBooks,
       image: '/images/odyssey.jpg',
+      images: [ // Additional product shots
+        '/images/odyssey.jpg',
+        '/images/inside.jpg',
+        '/images/back.jpg',
+        '/images/side.jpg'
+      ],
       rating: {
         rate: 4.7,
         count: 7500,
@@ -143,6 +203,12 @@ export default defineEventHandler(() => {
       description: 'A profound exploration of faith, doubt, and family by Fyodor Dostoevsky.',
       category: Category.EssentialBooks,
       image: '/images/karamazov.jpg',
+      images: [ // Additional product shots
+        '/images/karamazov.jpg',
+        '/images/inside.jpg',
+        '/images/back.jpg',
+        '/images/side.jpg'
+      ],
       rating: {
         rate: 4.6,
         count: 4000,
@@ -156,6 +222,12 @@ export default defineEventHandler(() => {
       description: 'Miguel de Cervantes’ satirical tale of a man who becomes a knight.',
       category: Category.EssentialBooks,
       image: '/images/quixote.jpg',
+      images: [ // Additional product shots
+        '/images/quixote.jpg',
+        '/images/inside.jpg',
+        '/images/back.jpg',
+        '/images/side.jpg'
+      ],
       rating: {
         rate: 4.4,
         count: 4500,
@@ -169,6 +241,12 @@ export default defineEventHandler(() => {
       description: 'Dante Alighieri’s epic poem exploring the afterlife and human destiny.',
       category: Category.ClassicBooks,
       image: '/images/divinecomedy.jpg',
+      images: [ // Additional product shots
+        '/images/divinecomedy.jpg',
+        '/images/inside.jpg',
+        '/images/back.jpg',
+        '/images/side.jpg'
+      ],
       rating: {
         rate: 4.9,
         count: 3600,
@@ -182,6 +260,12 @@ export default defineEventHandler(() => {
       description: 'Mary Shelley’s groundbreaking novel of scientific ambition and horror.',
       category: Category.EssentialBooks,
       image: '/images/frankenstein.jpg',
+      images: [ // Additional product shots
+        '/images/frankenstein.jpg',
+        '/images/inside.jpg',
+        '/images/back.jpg',
+        '/images/side.jpg'
+      ],
       rating: {
         rate: 4.5,
         count: 8400,
@@ -195,6 +279,12 @@ export default defineEventHandler(() => {
       description: 'Aldous Huxley’s vision of a future dystopia ruled by technology and control.',
       category: Category.EssentialBooks,
       image: '/images/bravenewworld.jpg',
+      images: [ // Additional product shots
+        '/images/bravenewworld.jpg',
+        '/images/inside.jpg',
+        '/images/back.jpg',
+        '/images/side.jpg'
+      ],
       rating: {
         rate: 4.4,
         count: 5300,
@@ -208,6 +298,12 @@ export default defineEventHandler(() => {
       description: 'The first book in J.R.R. Tolkien’s epic fantasy series.',
       category: Category.FantasyBooks,
       image: '/images/fellowship.gif',
+      images: [ // Additional product shots
+        '/images/fellowship.gif',
+        '/images/inside.jpg',
+        '/images/back.jpg',
+        '/images/side.jpg'
+      ],
       rating: {
         rate: 4.9,
         count: 21000,
@@ -221,6 +317,12 @@ export default defineEventHandler(() => {
       description: 'The second book in J.R.R. Tolkien’s epic fantasy series.',
       category: Category.FantasyBooks,
       image: '/images/twotowers.gif',
+      images: [ // Additional product shots
+        '/images/twotowers.gif',
+        '/images/inside.jpg',
+        '/images/back.jpg',
+        '/images/side.jpg'
+      ],
       rating: {
         rate: 4.9,
         count: 18500,
@@ -234,6 +336,12 @@ export default defineEventHandler(() => {
       description: 'The final book in J.R.R. Tolkien’s epic fantasy series.',
       category: Category.FantasyBooks,
       image: '/images/returnking.gif',
+      images: [ // Additional product shots
+        '/images/returnking.gif',
+        '/images/inside.jpg',
+        '/images/back.jpg',
+        '/images/side.jpg'
+      ],
       rating: {
         rate: 4.9,
         count: 23000,
@@ -247,6 +355,12 @@ export default defineEventHandler(() => {
       description: 'Homer’s ancient Greek epic about the Trojan War.',
       category: Category.ClassicBooks,
       image: '/images/iliad.jpg',
+      images: [ // Additional product shots
+        '/images/iliad.jpg',
+        '/images/inside.jpg',
+        '/images/back.jpg',
+        '/images/side.jpg'
+      ],
       rating: {
         rate: 4.6,
         count: 5600,
@@ -260,6 +374,12 @@ export default defineEventHandler(() => {
       description: 'Oscar Wilde’s philosophical novel about vanity and corruption.',
       category: Category.EssentialBooks,
       image: '/images/doriangray.jpg',
+      images: [ // Additional product shots
+        '/images/doriangray.jpg',
+        '/images/inside.jpg',
+        '/images/back.jpg',
+        '/images/side.jpg'
+      ],
       rating: {
         rate: 4.5,
         count: 6200,
@@ -273,6 +393,12 @@ export default defineEventHandler(() => {
       description: 'Charlotte Brontë’s novel about resilience and love in a young orphan’s life.',
       category: Category.BronteBooks,
       image: '/images/janeeyre.jpg',
+      images: [ // Additional product shots
+        '/images/janeeyre.jpg',
+        '/images/inside.jpg',
+        '/images/back.jpg',
+        '/images/side.jpg'
+      ],
       rating: {
         rate: 4.8,
         count: 7500,
@@ -286,6 +412,12 @@ export default defineEventHandler(() => {
       description: 'Emily Brontë’s intense and passionate tale of love and revenge.',
       category: Category.BronteBooks,
       image: '/images/wutheringheights.webp',
+      images: [ // Additional product shots
+        '/images/wutheringheights.webp',
+        '/images/inside.jpg',
+        '/images/back.jpg',
+        '/images/side.jpg'
+      ],
       rating: {
         rate: 4.4,
         count: 6700,
@@ -299,6 +431,12 @@ export default defineEventHandler(() => {
       description: 'Store all the important things.',
       category: Category.Clothing,  // Use the enum value here
       image: '/images/product1.jpg',
+      images: [ // Additional product shots
+        '/images/product1.jpg',
+        '/images/inside.jpg',
+        '/images/back.jpg',
+        '/images/side.jpg'
+      ],
       rating: {
         rate: 4.5,
         count: 120,
@@ -312,6 +450,12 @@ export default defineEventHandler(() => {
       description: 'This is the official shirt of the UVic Bookstore',
       category: Category.Clothing,  // Use the enum value here
       image: '/images/product2.jpg',
+      images: [ // Additional product shots
+        '/images/product2.jpg',
+        '/images/inside.jpg',
+        '/images/back.jpg',
+        '/images/side.jpg'
+      ],
       rating: {
         rate: 4.0,
         count: 85,
