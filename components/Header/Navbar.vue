@@ -33,7 +33,7 @@ const cartHasProducts = computed(() => {
                     <a href="/" class="hover:text-yellow-400 transition-colors duration-300">Home</a>
                     <div class="relative inline-block group">
                         <a href="/shop" class="hover:text-yellow-400 transition-colors duration-300">Shop</a>
-                        <div class="absolute hidden group-hover:block mt-2 bg-white border rounded-md shadow-lg w-48 z-10">
+                        <div class="absolute hidden group-hover:block bg-white border rounded-md shadow-lg w-48 z-10">
                             <a href="/shop?cat=Classic%20Books" class="block px-4 py-2 text-black hover:bg-yellow-400 hover:text-white">Classic Books</a>
                             <a href="/shop?cat=Essential%20Books" class="block px-4 py-2 text-black hover:bg-yellow-400 hover:text-white">Essential Books</a>
                             <a href="/shop?cat=Fantasy%20Books" class="block px-4 py-2 text-black hover:bg-yellow-400 hover:text-white">Fantasy Books</a>
