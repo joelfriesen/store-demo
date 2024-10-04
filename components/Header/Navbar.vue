@@ -38,6 +38,7 @@ const cartHasProducts = computed(() => {
                             <a href="/shop?cat=Essential%20Books" class="block px-4 py-2 text-black hover:bg-yellow-400 hover:text-white">Essential Books</a>
                             <a href="/shop?cat=Fantasy%20Books" class="block px-4 py-2 text-black hover:bg-yellow-400 hover:text-white">Fantasy Books</a>
                             <a href="/shop?cat=Brontë%20Books" class="block px-4 py-2 text-black hover:bg-yellow-400 hover:text-white">Brontë Books</a>
+                            <a href="/shop?cat=Clothing" class="block px-4 py-2 text-black hover:bg-yellow-400 hover:text-white">Clothing</a>
                         </div>
                     </div>
                     <a href="/about" class="hover:text-yellow-400 transition-colors duration-300">About Us</a>
@@ -101,6 +102,7 @@ const cartHasProducts = computed(() => {
                 <a href="/shop?cat=Essential%20Books" class="hover:text-yellow-400  ml-4 transition-colors duration-300">Essential Books</a>
                 <a href="/shop?cat=Fantasy%20Books" class="hover:text-yellow-400 ml-4 transition-colors duration-300">Fantasy Books</a>
                 <a href="/shop?cat=Brontë%20Books" class="hover:text-yellow-400 ml-4 transition-colors duration-300">Brontë Books</a>
+                <a href="/shop?cat=Clothing" class="hover:text-yellow-400 ml-4 transition-colors duration-300">Clothing</a>
                 <a href="/about" class="hover:text-yellow-400 transition-colors duration-300">About Us</a>
                 <a href="/contact" class="hover:text-yellow-400 transition-colors duration-300">Contact Us</a>
             </nav>
